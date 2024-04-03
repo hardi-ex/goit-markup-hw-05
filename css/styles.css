@@ -640,6 +640,8 @@ img {
 
   z-index: 999;
 
+  /* Вкл для JS */
+
   /* opacity: 0;
   pointer-events: none; */
 }
@@ -804,19 +806,22 @@ img {
   margin-bottom: 24px;
 }
 
-.agreement-icon {
+/* Другий спосіб */
+
+/* .agreement-icon {
   fill: #f4f4fd;
   opacity: 0;
-}
+} */
 
 input[type="checkbox"]:checked + .agreement-label > .agreement-span {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 
-input[type="checkbox"]:checked + .agreement-label .agreement-icon {
+/* input[type="checkbox"]:checked + .agreement-label .agreement-icon {
   opacity: 1;
-}
+} */
 
 .agreement-label {
   font-size: 12px;
