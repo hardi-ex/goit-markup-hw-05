@@ -654,7 +654,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 408px;
+  width: 408px;
   min-height: 584px;
   padding: 72px 24px;
   padding-bottom: 24px;
@@ -801,24 +801,49 @@ img {
 }
 
 .agreement {
+  margin-bottom: 24px;
 }
-.visually-hidden {
-}
-.agreement-text {
-}
-.agreement-checkbox {
-}
+
 .agreement-icon {
-  opacity: 0;
   fill: #f4f4fd;
+  opacity: 0;
 }
-.modal-link {
+
+input[type="checkbox"]:checked + .agreement-label > .agreement-span {
+  background-color: #404bbf;
+  border: none;
+}
+
+input[type="checkbox"]:checked + .agreement-label .agreement-icon {
+  opacity: 1;
+}
+
+.agreement-label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+.agreement-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-btn {
+  display: block;
   margin-left: 95px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
 
   cursor: pointer;
@@ -827,6 +852,7 @@ img {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-weight: 500;
   font-size: 16px;
