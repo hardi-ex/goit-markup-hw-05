@@ -597,7 +597,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   padding: 8px 24px;
   min-width: 165px;
   height: 40px;
@@ -616,8 +615,7 @@ img {
   color: #fff;
 }
 .footer-modal-icon {
-  height: 24px;
-  width: 24px;
+  margin-left: 16px;
 }
 
 /* #endregion Modal Footer 5*/
@@ -642,8 +640,8 @@ img {
 
   z-index: 999;
 
-  opacity: 1;
-  pointer-events: none;
+  /* opacity: 0;
+  pointer-events: none; */
 }
 
 .backdrop.is-open {
@@ -721,6 +719,10 @@ img {
 }
 .modal-block {
   margin-bottom: 8px;
+}
+
+.modal-com {
+  margin-bottom: 16px;
 }
 .modal-label {
   display: block;
